@@ -2,7 +2,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.1.0)
+    daemons (1.1.9)
     diff-lcs (1.2.5)
+    eventmachine (1.0.7)
     method_source (0.8.2)
     pry (0.10.0)
       coderay (~> 1.1.0)
@@ -24,6 +26,10 @@ GEM
       rspec-support (~> 3.0.0)
     rspec-support (3.0.2)
     slop (3.5.0)
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
 
 PLATFORMS
   ruby
@@ -33,3 +39,7 @@ DEPENDENCIES
   rack
   rack-test
   rspec
+  thin
+
+BUNDLED WITH
+   1.10.6
